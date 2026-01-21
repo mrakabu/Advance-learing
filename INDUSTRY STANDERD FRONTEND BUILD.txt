@@ -1,0 +1,169 @@
+✅ Frontend System Design (What you must master)
+1) Component Architecture (Clean & scalable UI)
+✅ Rule: Components should be boring + reusable
+
+Use 3 layers:
+
+1️⃣ UI components (dumb)
+
+Button, Input, Modal, Card
+No API calls, no business logic
+
+2️⃣ Feature components
+
+LoginForm, ResumeUpload, NewsList
+Contains validation + small logic
+
+3️⃣ Page/Route components
+
+/login, /dashboard
+Connects everything
+
+📌 Folder structure (industry standard)
+
+src/
+  app/ (Next.js routes)
+  features/
+    auth/
+    resume/
+    tech-news/
+  components/ui/
+  lib/
+  hooks/
+  store/
+
+2) State Management Strategies (don’t overuse global state)
+✅ What goes where:
+
+✅ React local state (useState)
+
+input fields, toggles, modals
+
+✅ TanStack Query
+
+server data (API fetch, caching, loading, retry)
+
+✅ Zustand
+
+global UI state / auth token / theme / sidebar open/close
+
+🔥 Senior rule:
+
+“Server state ≠ Client state”
+
+Most people mess this up.
+
+3) Rendering Patterns (Next.js App Router)
+
+This is the real upgrade.
+
+✅ Rendering types (simple meaning)
+
+SSR: render on server every request (fresh data)
+
+SSG: generate once at build time (fastest)
+
+ISR: regenerate in intervals (best for news/blog)
+
+CSR: render in browser (good for dashboards)
+
+📌 Best approach today:
+✅ Hybrid (mix all)
+
+Example:
+
+Landing page → SSG/ISR
+
+Dashboard → CSR + TanStack Query
+
+Profile page → SSR
+
+4) Server Components (Next.js power)
+
+In App Router:
+
+✅ Default is Server Component
+
+runs on server
+
+good for fetching securely
+
+reduces bundle size
+
+✅ Use "use client" only when needed:
+
+useState
+
+useEffect
+
+onClick
+
+browser APIs
+
+🔥 Best practice:
+
+Keep pages server by default, push interactivity to small client components.
+
+5) Streaming + Suspense (premium UX)
+
+Instead of waiting for everything, stream parts.
+
+Example idea:
+
+Show layout instantly
+
+Show loader for feed
+
+Stream results as they come
+
+This is how modern apps feel “fast”.
+
+6) Edge Rendering
+
+Used when:
+✅ you want low-latency globally
+Like:
+
+auth checks
+
+redirects
+
+lightweight personalization
+
+Don’t force it everywhere.
+
+7) Frontend Performance (important)
+✅ What makes frontend fast:
+
+smaller JS bundle
+
+lazy loading
+
+image optimization
+
+caching server calls
+
+avoid rerenders
+
+debounce inputs
+
+Tools you should use:
+
+Next Image
+
+dynamic import()
+
+React.memo (only when needed)
+
+Lighthouse
+
+✅ Your Stack (Final Setup)
+
+For your level, this is perfect:
+
+✅ Next.js (App Router) + TypeScript
+✅ TailwindCSS
+✅ TanStack Query
+✅ Zustand (only if needed)
+✅ Zod (validation)
+✅ React Hook Form (forms)
