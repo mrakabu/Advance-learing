@@ -167,3 +167,4 @@ For your level, this is perfect:
 ✅ Zustand (only if needed)
 ✅ Zod (validation)
 ✅ React Hook Form (forms)
+
