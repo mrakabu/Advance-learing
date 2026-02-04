@@ -1,0 +1,154 @@
+✅ 1) Frontend (Main Website)
+Next.js 15 (React)
+
+Why:
+
+Best for SEO (Google indexing)
+
+Best for routing like /team, /abu, /projects
+
+Fast performance with Server Components
+
+Easy deployment on Vercel
+
+✅ Use App Router (latest standard)
+
+✅ 2) Styling (Premium UI)
+Tailwind CSS
+
+Why:
+
+Clean modern UI super fast to build
+
+Easy responsive design
+
+Perfect for Apple-like minimal layouts
+
+shadcn/ui
+
+Why:
+
+Premium ready components (buttons, cards, dialogs)
+
+Looks modern and not “bootstrap-ish”
+
+Customizable + production standard
+
+✅ 3) Animations (Apple Feel)
+Framer Motion
+
+Why:
+
+Smooth Apple-style page animations
+
+Section reveal animations
+
+Hover effects (card lift, button glow, etc.)
+
+Works perfectly with Next.js
+
+✅ We’ll keep animations minimal + smooth (premium vibe)
+
+✅ 4) 3D / Depth Feel (Lightweight)
+
+Since you want “not 2D” but also Apple premium:
+
+Option 1 (Recommended): CSS 3D + Tilt
+
+Card tilt on hover
+
+Parallax depth
+
+Shadow + blur layers
+✅ Looks 3D but ultra fast
+
+Option 2 (Optional, later): Spline
+
+Add 1 premium 3D object in hero (lightweight)
+✅ best “3D look” without heavy coding
+❌ but only if it doesn’t slow the site
+
+⚠️ Full Three.js is powerful but can make site heavy if not optimized.
+
+✅ 5) Data Handling (Team Members + Projects)
+Simple way (Best for now):
+
+JSON / JS object inside project
+Example: data/team.ts, data/projects.ts
+
+✅ easiest
+✅ fastest
+✅ no backend required
+✅ perfect for static portfolio
+
+Advanced way (Later, when bigger):
+
+MongoDB / PostgreSQL + Admin Dashboard
+
+For adding members/projects without code
+
+✅ 6) Contact Form (Must-have)
+Option A (Simple & Best):
+
+Formspree / Web3Forms
+✅ no backend needed
+✅ works instantly
+✅ reliable
+
+Option B (Professional full control):
+
+Next.js API Route + Nodemailer
+✅ mails go directly from your server
+✅ more customizable
+❌ needs email setup
+
+✅ 7) Authentication (Only if needed)
+
+Not required for public portfolio.
+
+If later you want admin panel:
+
+NextAuth.js
+
+Google login for admin
+
+✅ 8) Hosting / Deployment
+Vercel (Best for Next.js)
+
+One click deploy
+
+Auto builds from GitHub
+
+Free SSL
+
+Fast global CDN
+
+✅ 9) Domain + Branding
+
+Buy domain: name.com / name.dev
+
+Connect to Vercel easily
+
+Recommended:
+✅ .dev (developer vibe)
+✅ .com (professional clients)
+
+✅ 10) Extra “Premium Add-ons” (Optional)
+
+These make it feel like an Apple product:
+
+✅ next/font (Premium fonts like Inter / SF style)
+✅ SEO setup (metadata + OpenGraph for LinkedIn preview)
+✅ Dark/Light mode toggle
+✅ Smooth scrolling
+✅ Performance optimization (lazy loading images)
+
+✅ Final Tech Stack Summary (What we will use)
+
+✅ Next.js (App Router)
+✅ Tailwind CSS
+✅ shadcn/ui
+✅ Framer Motion
+✅ Team/Projects stored in JSON/TS file
+✅ Contact via Formspree (or API route)
+✅ Deploy on Vercel
